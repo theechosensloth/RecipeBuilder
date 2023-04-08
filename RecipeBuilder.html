@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<img src="logo.png" alt="RecipeMe Logo" role="img">
+<br>
+<label><input class="Title-box" id="recipe-title" type="text" aria-live="assertive" placeholder="Recipe Title" aria-placeholder="Enter the title of the Recipe" role="textbox" tabindex="0"></label>
+<br>
+
+<input class="Input-Box" type="text" id="ingredient-input" placeholder="Ingredient Name" role="textbox"
+       aria-label="Ingredient input box" tabindex="0"><span class="Add-button" id="ingredient-button" aria-label="Add ingredient" role="button" tabindex="0">ADD</span>
+
+
+
+
+<div class="container" id="ingredients-container">
+<p id="fillerIngredient" role="contentinfo" tabindex="0">Ingredients will appear here</p>
+</div>
+
+<input class="Input-Box" type="text" id="instructions-input" placeholder="Instruction Text"
+       aria-label="Instruction input box" role="textbox" tabindex="0"><span class="Add-button" id="instruction-button" aria-label="Add instruction" role="button" tabindex="0">ADD</span>
+
+
+<div class="container" id="instructions-container">
+    <p id="fillerInstruction" role="contentinfo" tabindex="0">Instructions will appear here</p>
+</div>
+<br>
+<div class="button-container">
+    <div class="form-buttons" id="reset-button" role="button" tabindex="0">RESET</div>
+    <div class="form-buttons" id="save-button" role="button" tabindex="0">SAVE</div>
+</div>
+<div id="error-message" aria-live="assertive" tabindex="1" aria-label="Error Message"></div>
+<script src="script.js"></script>
+</body>
+</html>
